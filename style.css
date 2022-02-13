@@ -1,10 +1,11 @@
 /*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 /*COLORS*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Overpass, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -60,7 +61,7 @@ header .header-container .header-image {
   background-position: 5vw -15vh, 0 -10vh;
 }
 header .header-container .header-intro .intro-heading {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 1rem 0 1rem 1rem;
 }
