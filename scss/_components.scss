@@ -12,3 +12,10 @@ $grey: hsl(233, 8%, 62%);
 $light-grey: hsl(220, 16%, 96%);
 $white: hsl(0, 0%, 98%);
 $whiter: hsl(0, 0%, 100%);
+
+//Media querries
+@mixin respond-desktop {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}

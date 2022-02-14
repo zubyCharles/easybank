@@ -13,6 +13,16 @@ body {
   background: #fafafa;
 }
 
+button {
+  transition: all 100ms ease-out 20ms;
+}
+@media (min-width: 1440px) {
+  button:hover {
+    filter: contrast(2);
+    cursor: pointer;
+  }
+}
+
 nav .nav-container .nav-top {
   position: fixed;
   z-index: 100;
@@ -22,6 +32,11 @@ nav .nav-container .nav-top {
   justify-content: space-between;
   padding: 1.2rem;
   background: #fff;
+}
+@media (min-width: 1440px) {
+  nav .nav-container .nav-top .nav-toggler {
+    display: none;
+  }
 }
 nav .nav-container .nav-links {
   position: fixed;
@@ -33,11 +48,28 @@ nav .nav-container .nav-links {
   box-shadow: 3px 3px 100px #2d314d;
   transition: top 300ms ease-out 80ms;
 }
+@media (min-width: 1440px) {
+  nav .nav-container .nav-links {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+}
 nav .nav-container .nav-links .nav-links-container {
   display: flex;
   flex-direction: column;
   width: fit-content;
   margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  nav .nav-container .nav-links .nav-links-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 nav .nav-container .nav-links .nav-links-container a {
   padding: 0.9rem 0;
@@ -45,12 +77,27 @@ nav .nav-container .nav-links .nav-links-container a {
   font-size: 1.25rem;
   color: #2d314d;
 }
+@media (min-width: 1440px) {
+  nav .nav-container .nav-links .nav-links-container a {
+    padding: 1rem 1.25rem;
+    color: #9698a6;
+    transition: border 50ms ease-out 50ms;
+  }
+  nav .nav-container .nav-links .nav-links-container a:hover {
+    border-bottom: 5px solid #2dd259;
+  }
+}
 
 header .header-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 3.5rem;
+}
+@media (min-width: 1440px) {
+  header .header-container {
+    flex-direction: row-reverse;
+  }
 }
 header .header-container .header-image {
   width: 100%;
@@ -60,10 +107,30 @@ header .header-container .header-image {
   background-size: 90%, 100%;
   background-position: 5vw -15vh, 0 -10vh;
 }
+@media (min-width: 1440px) {
+  header .header-container .header-image {
+    height: 600px;
+    padding-top: 10rem;
+    background: url("images/image-mockups.png"), url("images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 65% 120%, 150% 100%;
+    background-position: 10vw -12vh, 0vw 8vh;
+  }
+}
+@media (min-width: 1440px) {
+  header .header-container .header-intro {
+    padding: 8rem 5rem 5rem 2rem;
+  }
+}
 header .header-container .header-intro .intro-heading {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  padding: 1rem 0 1rem 1rem;
+  padding: 3rem 0 1rem 1rem;
+}
+@media (min-width: 1440px) {
+  header .header-container .header-intro .intro-heading {
+    margin: 0;
+  }
 }
 header .header-container .header-intro .intro-heading h1 {
   font-size: 2.15rem;
@@ -81,6 +148,11 @@ header .header-container .header-intro .intro-btn {
   padding: 1.2rem 0;
   width: fit-content;
   margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  header .header-container .header-intro .intro-btn {
+    margin: 0;
+  }
 }
 header .header-container .header-intro .intro-btn button {
   padding: 0.55rem 2.15rem;
@@ -102,10 +174,21 @@ main .choose-container .choose-intro {
   width: 100%;
   padding: 3rem 0 1.2rem 0;
 }
+@media (min-width: 1440px) {
+  main .choose-container .choose-intro {
+    padding: 3rem 0 1.2rem 4rem;
+  }
+}
 main .choose-container .choose-intro h2 {
   color: #2d314d;
   width: fit-content;
   margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  main .choose-container .choose-intro h2 {
+    margin: 0;
+    letter-spacing: 0.15rem;
+  }
 }
 main .choose-container .choose-intro p {
   color: #2d314d;
@@ -113,8 +196,22 @@ main .choose-container .choose-intro p {
   margin: 0 auto;
   padding: 1rem 0;
 }
+@media (min-width: 1440px) {
+  main .choose-container .choose-intro p {
+    margin: 0;
+    width: 40%;
+  }
+}
 main .choose-container .choose-icons {
   width: 100%;
+}
+@media (min-width: 1440px) {
+  main .choose-container .choose-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 0 1.2rem 4rem;
+  }
 }
 main .choose-container .choose-icons div {
   width: inherit;
@@ -125,6 +222,11 @@ main .choose-container .choose-icons div img {
   width: fit-content;
   margin: 0 auto;
 }
+@media (min-width: 1440px) {
+  main .choose-container .choose-icons div img {
+    margin: 0;
+  }
+}
 main .choose-container .choose-icons div h3 {
   color: #2d314d;
   width: fit-content;
@@ -133,24 +235,52 @@ main .choose-container .choose-icons div h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media (min-width: 1440px) {
+  main .choose-container .choose-icons div h3 {
+    margin: 0;
+  }
+}
 main .choose-container .choose-icons div p {
   width: 90%;
   margin: 0 auto;
   color: #9698a6;
 }
+@media (min-width: 1440px) {
+  main .choose-container .choose-icons div p {
+    margin: 0;
+  }
+}
 main .articles-container {
   width: 100%;
   padding: 4rem 0;
+}
+@media (min-width: 1440px) {
+  main .articles-container {
+    padding: 4rem;
+  }
 }
 main .articles-container .articles-header {
   width: fit-content;
   margin: 0 auto;
   padding: 1.5rem 0;
 }
+@media (min-width: 1440px) {
+  main .articles-container .articles-header {
+    margin: 0 0 0 0.5rem;
+  }
+}
+main .articles-container .articles-header h2 {
+  color: #2d314d;
+}
 main .articles-container .article-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  main .articles-container .article-items {
+    flex-direction: row;
+  }
 }
 main .articles-container .article-items .article-item {
   width: 90%;
@@ -158,11 +288,23 @@ main .articles-container .article-items .article-item {
   background: white;
   border-radius: 0.5rem;
 }
+@media (min-width: 1440px) {
+  main .articles-container .article-items .article-item {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
 main .articles-container .article-items .article-item .article-image {
   width: 100%;
 }
 main .articles-container .article-items .article-item .article-image img {
   width: inherit;
+  transition: all 250ms ease-out 25ms;
+}
+@media (min-width: 1440px) {
+  main .articles-container .article-items .article-item .article-image img:hover {
+    transform: scale(0.98);
+  }
 }
 main .articles-container .article-items .article-item .article-text {
   width: 85%;
@@ -176,6 +318,13 @@ main .articles-container .article-items .article-item .article-text h3 {
   padding: 0.6rem 0;
   font-size: 1.25rem;
   font-weight: 600;
+  transition: color 50ms ease-out 20ms;
+}
+@media (min-width: 1440px) {
+  main .articles-container .article-items .article-item .article-text h3:hover {
+    cursor: pointer;
+    color: #2dd259;
+  }
 }
 main .articles-container .article-items .article-item .article-text p {
   color: #9698a6;
@@ -189,12 +338,23 @@ footer .footer-container {
   background: #2d314d;
   padding: 1.5rem 0;
 }
+@media (min-width: 1440px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer .footer-container div {
   margin: 1rem auto;
 }
 footer .footer-container .footer-logo {
   width: 40%;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 1440px) {
+  footer .footer-container .footer-logo {
+    width: 100%;
+  }
 }
 footer .footer-container .footer-logo img {
   width: 100%;
@@ -206,8 +366,19 @@ footer .footer-container .social-icons {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 1440px) {
+  footer .footer-container .social-icons {
+    width: 100%;
+  }
+}
 footer .footer-container .social-icons img {
-  width: 14%;
+  width: 13%;
+}
+@media (min-width: 1440px) {
+  footer .footer-container .social-icons img {
+    cursor: pointer;
+    width: 15%;
+  }
 }
 footer .footer-container .footer-div-1 {
   outline: none;
@@ -230,6 +401,14 @@ footer .footer-container .footer-div-4 a {
   padding: 0.35rem 0;
   text-decoration: none;
   margin: 0 auto;
+  transition: color 50ms ease-out 20ms;
+}
+@media (min-width: 1440px) {
+  footer .footer-container .footer-div-2 a:hover,
+footer .footer-container .footer-div-3 a:hover,
+footer .footer-container .footer-div-4 a:hover {
+    color: #2dd259;
+  }
 }
 footer .footer-container .footer-div-3 {
   margin-bottom: 2.5rem;

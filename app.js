@@ -5,6 +5,9 @@ const toggleIcon = document.querySelector('#toggler');
 let navIsToggled = false;
 
 toggler.addEventListener('click', () => {
+  if (window.screen.width >= 1440) {
+    return; 
+  }
   if (!navIsToggled) {
     navMenu.style.top = '12%';
     toggleIcon.src = './images/icon-close.svg';
