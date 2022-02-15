@@ -6,13 +6,13 @@
   font-family: 'Lato', Overpass, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  //font-size: 18px;
+  font-size: 16px;
   background: $white;
 }
 
 button {
   transition: all 100ms ease-out 20ms;
-  font-size: 1rem;
+  font-size: 0.85rem;
   @include respond-desktop {
     &:hover {
       filter: contrast(1.5);
@@ -70,7 +70,7 @@ nav {
         a {
           padding: 0.9rem 0;
           text-decoration: none;
-          font-size: 1.25rem;
+          font-size: 1.05rem;
           color: $dark-blue;
           @include respond-desktop {
             padding: 1rem 1.25rem;
@@ -111,7 +111,7 @@ header {
         background: url('images/image-mockups.png'),
         url('images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
-        background-size: 65% 120%, 150% 100%;
+        background-size: 65% 100%, 160% 80%;
         background-position: 10vw -12vh, 0vw 8vh;
       }
     }

@@ -10,12 +10,13 @@
 }
 
 body {
+  font-size: 16px;
   background: #fafafa;
 }
 
 button {
   transition: all 100ms ease-out 20ms;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 @media (min-width: 1200px) {
   button:hover {
@@ -75,7 +76,7 @@ nav .nav-container .nav-links .nav-links-container {
 nav .nav-container .nav-links .nav-links-container a {
   padding: 0.9rem 0;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   color: #2d314d;
 }
 @media (min-width: 1200px) {
@@ -114,7 +115,7 @@ header .header-container .header-image {
     padding-top: 10rem;
     background: url("images/image-mockups.png"), url("images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 65% 120%, 150% 100%;
+    background-size: 65% 100%, 160% 80%;
     background-position: 10vw -12vh, 0vw 8vh;
   }
 }
