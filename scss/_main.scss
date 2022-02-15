@@ -12,9 +12,10 @@ body {
 
 button {
   transition: all 100ms ease-out 20ms;
+  font-size: 1rem;
   @include respond-desktop {
     &:hover {
-      filter: contrast(2.0);
+      filter: contrast(1.5);
       cursor: pointer;
     }
   }
@@ -125,6 +126,7 @@ header {
         padding: 3rem 0 1rem 1rem;
         @include respond-desktop {
          margin: 0;
+         width: 100%;
         }
         h1 {
           font-size: 2.15rem;
@@ -137,6 +139,11 @@ header {
         padding: 0.4rem 0 1rem 1rem;
         p {
           color: $grey;
+          @include respond-desktop {
+            font-size: 1.15rem;
+            line-height: 1.85rem;
+            width: 80%;
+          }
         }
       }
       .intro-btn {
@@ -180,17 +187,18 @@ main {
         margin: 0 auto;
         @include respond-desktop {
           margin: 0;
-          letter-spacing: 0.15rem;
         }
       }
       p {
-        color: $dark-blue;
+        color: $grey;
         width: 90%;
         margin: 0 auto;
         padding: 1rem 0;
+        text-align: center;
         @include respond-desktop {
           margin: 0;
           width: 40%;
+          text-align: justify;
         }
       }
     }
@@ -229,8 +237,10 @@ main {
           width: 90%;
           margin: 0 auto;
           color: $grey;
+          text-align: center;
           @include respond-desktop {
             margin: 0;
+            text-align: justify;
           }
         }
       }
@@ -247,7 +257,7 @@ main {
     .articles-header {
       width: fit-content;
       margin: 0 auto;
-      padding: 1.5rem 0;
+      padding: 0.5rem 0;
       @include respond-desktop {
         margin: 0 0 0 0.5rem;
       }

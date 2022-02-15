@@ -16,7 +16,7 @@ $whiter: hsl(0, 0%, 100%);
 
 //Media querries
 @mixin respond-desktop {
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
         @content;
     }
 }
