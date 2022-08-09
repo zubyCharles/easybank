@@ -9,6 +9,10 @@
   font-family: "Lato", Overpass, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   background: #fafafa;
